@@ -141,7 +141,7 @@ export default function Main() {
                   : "opacity-0 text-5xl -translate-y-20 overflow-x-hidden"
               }`}
             >
-              Knowledge:
+              Knowledge
             </h2>
           </div>
           <motion.div

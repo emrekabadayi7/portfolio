@@ -7,7 +7,7 @@ export default function Main2() {
       <h1 className="text-6xl text-center mt-10 max-xl:text-4xl max-md:text-3xl">
         I am currently working on this{" "}
         <b className="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-yellow-500 to-lime-500">
-          website:
+          website
         </b>
       </h1>
       <div className="grid grid-flow-col max-xl:grid-flow-row">
@@ -20,7 +20,7 @@ export default function Main2() {
             Describing what Guyana Foundation is for and what kind of
             contributions they have on Guyanese people. <br></br>
             <br></br>
-            If you'd like to see the website, just click on the video.
+            Click the video to see the website.
           </h2>
         </div>
         <a target="_blank" href="http://guyanaf.vercel.app">
