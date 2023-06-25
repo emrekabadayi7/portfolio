@@ -36,7 +36,7 @@ export default function Main2() {
             You can see more info{" "}
             <b className=" underline hover:text-blue-600">
               <t>
-                <a href="https://www.compuphase.com/pawn/pawn.htm">
+                <a target="_blank" href="https://www.compuphase.com/pawn/pawn.htm">
                   in this link.
                 </a>
               </t>

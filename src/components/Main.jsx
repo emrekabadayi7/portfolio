@@ -50,8 +50,8 @@ export default function Main() {
     const handleResize = () => {
       const breakpoints = [
         { width: 500, size: 70 },
-        { width: 1366, size: 80 },
-        { width: 1500, size: 100 },
+        { width: 1200, size: 80 },
+        { width: 1700, size: 100 },
         { width: 1900, size: 150 },
       ];
       let newSize = 180; // Default size
@@ -103,10 +103,10 @@ export default function Main() {
           <img
             src={emrePP}
             alt="emre pp"
-            className={`w-60 border-2 rounded-[20vh] delay-1000 duration-[2000ms] transition-all ease-out ${
+            className={`w-60 border-2 rounded-[20vh] delay-1000 duration-[3000ms] transition-all ease-in-out ${
               IsH2Visible
                 ? "opacity-100  border-lime-600"
-                : "opacity-0 w-20 -translate-y-20"
+                : "opacity-0 w-20 rounded-sm -translate-y-20"
             }`}
           ></img>
 
@@ -141,7 +141,7 @@ export default function Main() {
                   : "opacity-0 text-5xl -translate-y-20 overflow-x-hidden"
               }`}
             >
-              Knowledge
+              SKILLS
             </h2>
           </div>
           <motion.div
