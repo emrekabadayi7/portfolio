@@ -106,7 +106,7 @@ export default function Main() {
             className={`w-60 border-2 rounded-[20vh] delay-1000 duration-[3000ms] transition-all ease-in-out ${
               IsH2Visible
                 ? "opacity-100  border-lime-600"
-                : "opacity-0 w-20 rounded-sm -translate-y-20"
+                : "opacity-0 w-20 -translate-y-20"
             }`}
           ></img>
 
