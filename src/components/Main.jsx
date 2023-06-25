@@ -3,14 +3,14 @@ import emrePP from "./imgs/emrePP.jpg";
 
 // Keys
 
-import key01 from "./pianoKeys/key01.ogg"
-import key02 from "./pianoKeys/key02.ogg"
-import key03 from "./pianoKeys/key03.ogg"
-import key04 from "./pianoKeys/key04.ogg"
-import key05 from "./pianoKeys/key05.ogg"
-import key06 from "./pianoKeys/key06.ogg"
-import key07 from "./pianoKeys/key07.ogg"
-import key08 from "./pianoKeys/key08.ogg"
+import key01 from "./pianoKeys/key01.ogg";
+import key02 from "./pianoKeys/key02.ogg";
+import key03 from "./pianoKeys/key03.ogg";
+import key04 from "./pianoKeys/key04.ogg";
+import key05 from "./pianoKeys/key05.ogg";
+import key06 from "./pianoKeys/key06.ogg";
+import key07 from "./pianoKeys/key07.ogg";
+import key08 from "./pianoKeys/key08.ogg";
 
 import {
   DiHtml5,
@@ -91,7 +91,7 @@ export default function Main() {
   return (
     <main className="bg-gradient-to-br overflow-x-hidden font-Raleway h-[100vh] from-slate-800 to-black text-white flex">
       <div
-        className={`text-8xl grid bg-clip-text text-center text-transparent tracking-tighter bg-gradient-to-r from-green-500 to-green-900 max-lg:text-4xl mx-auto mt-5 duration-[2000ms] transition-opacity ${
+        className={`text-8xl grid bg-clip-text text-center text-transparent tracking-tighter bg-gradient-to-r max-lg:text-4xl mx-auto mt-5 duration-[2000ms] transition-opacity ${
           isContentVisible ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -110,8 +110,9 @@ export default function Main() {
             }`}
           ></img>
 
-          <motion.h3
-            className="overflow-y-hidden whitespace-nowrap"
+          <motion.div
+            className={`bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-blue-400 pb-2 overflow-y-hidden whitespace-nowrap
+            }`}
             variants={{
               visible: {
                 transition: {
@@ -128,7 +129,7 @@ export default function Main() {
                 {char}
               </motion.span>
             ))}
-          </motion.h3>
+          </motion.div>
           <br></br>
         </div>
 
