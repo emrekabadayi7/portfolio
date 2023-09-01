@@ -1,10 +1,11 @@
 import React from "react";
 import pawnoWindow from "./imgs/pawnoWindow.jpg";
+import pawnoWindow2 from "./imgs/pawnoWindow2.png";
 import samp from "./imgs/sa-mp.png";
 import samp2 from "./imgs/sa-mp2.png";
 
 export default function Main2() {
-  const images = [pawnoWindow, samp, samp2];
+  const images = [pawnoWindow, samp, pawnoWindow2, samp2];
   const [currentSlide, setCurrentSlide] = React.useState(0);
 
   React.useEffect(() => {
@@ -25,7 +26,7 @@ export default function Main2() {
           <h2 className="text-center 2xl:text-lg max-xl:text-sm mx-auto max-sm:px-5 mt-3 max-w-2xl">
             The coding journey of mine began when I was 12 years old, in 2007,
             with the language called:{" "}
-            <b className="text-2xl text-amber-300">"Pawno".</b> <br></br>
+            <b className="text-2xl text-amber-300">"Pawn".</b> <br></br>
             This language is being used to code SA-MP (San Andreas Multiplayer)
             servers.
             <br></br>
@@ -38,6 +39,7 @@ export default function Main2() {
             <b className=" underline hover:text-blue-600">
               <t>
                 <a
+                  rel="noreferrer"
                   target="_blank"
                   href="https://www.compuphase.com/pawn/pawn.htm"
                 >
@@ -46,7 +48,7 @@ export default function Main2() {
               </t>
             </b>
           </h2>
-          <div className="relative flex overflow-x-hidden">
+          <div className="relative flex overflow-x-hidden pb-10">
             <div
               id="slide"
               className="h-[60vh] place-self-center justify-center content-center top-0 bottom-0 xl:w-[900px] max-xl:h-[60vh] max-lg:w-[700px] max-md:w-[400px] aspect-square max-md:h-[30vh] max-md:overflow-x-hidden mt-10 w-[1000px] mx-auto overflow-y-hidden relative max-sm:mt-20"
@@ -55,7 +57,7 @@ export default function Main2() {
                 <img
                   key={index}
                   src={imgSrc}
-                  alt={`Image ${index + 1}`}
+                  alt={`san andreas ${index + 1}`}
                   className={`mx-auto max-sm:px-2 absolute h-full w-full transition-opacity duration-[2000ms] ${
                     currentSlide === index ? "opacity-100" : "opacity-0"
                   }`}
