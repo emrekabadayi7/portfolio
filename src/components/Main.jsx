@@ -1,17 +1,6 @@
 import React, { useState, useEffect } from "react";
 import emrePP from "./imgs/emrePP.jpg";
 
-// Keys
-
-import key01 from "./pianoKeys/key01.ogg";
-import key02 from "./pianoKeys/key02.ogg";
-import key03 from "./pianoKeys/key03.ogg";
-import key04 from "./pianoKeys/key04.ogg";
-import key05 from "./pianoKeys/key05.ogg";
-import key06 from "./pianoKeys/key06.ogg";
-import key07 from "./pianoKeys/key07.ogg";
-import key08 from "./pianoKeys/key08.ogg";
-
 import {
   DiHtml5,
   DiCss3,
@@ -23,7 +12,6 @@ import {
 import { SiTailwindcss, SiAdobephotoshop } from "react-icons/si";
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
-import SideNavbar from "./SideNavbar";
 
 export default function Main() {
   const [isContentVisible, setIsContentVisible] = useState(false);
@@ -105,13 +93,13 @@ export default function Main() {
             alt="emre pp"
             className={`w-60 border-2 rounded-[20vh] delay-1000 duration-[3000ms] transition-all ease-in-out ${
               IsH2Visible
-                ? "opacity-100  border-lime-600"
+                ? "opacity-100 "
                 : "opacity-0 w-20 -translate-y-20"
             }`}
           ></img>
 
           <motion.div
-            className={`bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-blue-400 pb-2 overflow-y-hidden whitespace-nowrap
+            className={`bg-clip-text text-transparent text-white pb-2 overflow-y-hidden whitespace-nowrap
             }`}
             variants={{
               visible: {
@@ -156,7 +144,6 @@ export default function Main() {
               color="text-red-500"
               index={0}
               bgColor="active:bg-red-400"
-              keyNote={key01}
             />
             <SkillCard
               skill="CSS"
@@ -164,7 +151,6 @@ export default function Main() {
               color="text-blue-500"
               index={1}
               bgColor="active:bg-blue-400"
-              keyNote={key02}
             />
             <SkillCard
               skill="JavaScript"
@@ -172,7 +158,6 @@ export default function Main() {
               color="text-[#F7E018]"
               index={2}
               bgColor="active:bg-yellow-500"
-              keyNote={key03}
             />
             <SkillCard
               skill="ReactJS"
@@ -180,7 +165,6 @@ export default function Main() {
               color="text-[#61DBFB]"
               index={3}
               bgColor="active:bg-cyan-200"
-              keyNote={key04}
             />
             <SkillCard
               skill="TailwindCSS"
@@ -188,7 +172,6 @@ export default function Main() {
               color="text-[#01B7D6]"
               index={4}
               bgColor="active:bg-cyan-300"
-              keyNote={key05}
             />
             <SkillCard
               skill="MongoDB"
@@ -196,7 +179,6 @@ export default function Main() {
               color="text-green-500"
               index={5}
               bgColor="active:bg-green-400"
-              keyNote={key06}
             />
             <SkillCard
               skill="Git"
@@ -204,7 +186,6 @@ export default function Main() {
               color="text-gray-500"
               index={6}
               bgColor="active:bg-gray-600"
-              keyNote={key07}
             />
             <SkillCard
               skill="Adobe Photoshop"
@@ -214,7 +195,6 @@ export default function Main() {
               color="text-blue-600"
               index={7}
               bgColor="active:bg-blue-800"
-              keyNote={key08}
             />
           </motion.div>
         </div>
