@@ -3,7 +3,7 @@ import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 export default function GuyanaF() {
   return (
-    <div className="grid pb-10 max-xl:grid-flow-row">
+    <div className="grid m-2 border border-lime-500 pb-10 max-xl:grid-flow-row">
       <div className="flex flex-col 2xl:w-[700px] xl:w-[600px] text-center gap-5 max-md:w-full mx-auto justify-center">
         <a
           alt="website"
@@ -11,7 +11,7 @@ export default function GuyanaF() {
           target="_blank"
           href="https://theguyanafoundation.com"
         >
-          <h1 className="text-3xl xl:text-6xl hover:underline hover:cursor-pointer decoration-lime-500 whitespace-nowrap mx-auto bg-clip-text text-transparent tracking-tighter bg-gradient-to-r from-red-700 via-yellow-500 to-lime-500 font-extrabold font-Inter py-2">
+          <h1 className="text-3xl xl:text-6xl hover:cursor-pointer hover:scale-105 duration-100 whitespace-nowrap mx-auto bg-clip-text text-transparent tracking-tighter bg-gradient-to-r from-red-700 via-yellow-500 to-lime-500 font-extrabold font-Inter py-2">
             Guyana Foundation
           </h1>
         </a>
@@ -33,7 +33,7 @@ export default function GuyanaF() {
             autoPlay
             loop
             muted
-            className="max-w-xs sm:max-w-xl grid mx-auto h-full"
+            className="w-72 sm:w-[500px] grid mx-auto h-full"
             src={guyanaVideo}
           />
         </section>

@@ -3,15 +3,15 @@ import SpaQuestWebsite from "./imgs/SpaQuestWebsite.png";
 
 export default function GuyanaF() {
   return (
-    <div className="grid pb-10 max-xl:grid-flow-row">
+    <div className="grid border m-2 border-purple-500 pb-10 max-xl:grid-flow-row">
       <div className="flex flex-col 2xl:w-[700px] xl:w-[600px] text-center gap-5 max-md:w-full mx-auto justify-center">
         <a
           alt="website"
           rel="noreferrer"
           target="_blank"
-          href="http://spaquest.vercel.app"
+          href="https://spaquest.vercel.app"
         >
-          <h1 className="text-3xl xl:text-6xl hover:underline hover:cursor-pointer decoration-amber-600 whitespace-nowrap mx-auto bg-clip-text text-transparent tracking-tighter bg-gradient-to-r from-purple-600 to-orange-600 font-extrabold font-Inter py-2">
+          <h1 className="text-3xl hover:scale-105 duration-100 xl:text-6xl hover:cursor-pointer whitespace-nowrap mx-auto bg-clip-text text-transparent tracking-tighter bg-gradient-to-r from-purple-600 to-orange-600 font-extrabold font-Inter py-2">
             SpaQuest
           </h1>
         </a>
@@ -31,7 +31,7 @@ export default function GuyanaF() {
         <section className="h-36 sm:h-72 mx-auto">
           <img
             alt="SpaQuest website landing page"
-            className="max-w-xs sm:max-w-xl grid mx-auto h-full"
+            className="w-72 sm:w-[500px] grid mx-auto h-full"
             src={SpaQuestWebsite}
           />
         </section>

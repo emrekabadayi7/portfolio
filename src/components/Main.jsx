@@ -9,6 +9,8 @@ import {
   DiMongodb,
   DiGit,
 } from "react-icons/di";
+import { SiNextdotjs } from "react-icons/si";
+
 import { SiTailwindcss, SiAdobephotoshop } from "react-icons/si";
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
@@ -92,9 +94,7 @@ export default function Main() {
             src={emrePP}
             alt="emre pp"
             className={`w-60 border-2 rounded-[20vh] delay-1000 duration-[3000ms] transition-all ease-in-out ${
-              IsH2Visible
-                ? "opacity-100 "
-                : "opacity-0 w-20 -translate-y-20"
+              IsH2Visible ? "opacity-100 " : "opacity-0 w-20 -translate-y-20"
             }`}
           ></img>
 
@@ -136,7 +136,7 @@ export default function Main() {
           <motion.div
             initial="hidden"
             animate={isContentVisible ? "visible" : "hidden"}
-            className="grid grid-flow-col max-xl:grid-flow-row max-xl:grid-cols-4 px-2 mx-auto tracking-tight items-center gap-2"
+            className="flex flex-wrap w-[70vw] justify-center max-xl:grid-flow-row max-xl:grid-cols-4 px-2 mx-auto tracking-tight items-center gap-2"
           >
             <SkillCard
               skill="HTML"
@@ -165,6 +165,13 @@ export default function Main() {
               color="text-[#61DBFB]"
               index={3}
               bgColor="active:bg-cyan-200"
+            />
+            <SkillCard
+              skill="NextJS"
+              icon={<SiNextdotjs size={iconSize} />}
+              color="text-[#000000]"
+              index={3}
+              bgColor="active:bg-slate-900"
             />
             <SkillCard
               skill="TailwindCSS"
