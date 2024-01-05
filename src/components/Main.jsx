@@ -9,9 +9,8 @@ import {
   DiMongodb,
   DiGit,
 } from "react-icons/di";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiAdobepremierepro, SiTailwindcss, SiAdobephotoshop } from "react-icons/si";
 
-import { SiTailwindcss, SiAdobephotoshop } from "react-icons/si";
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 
@@ -79,7 +78,7 @@ export default function Main() {
   };
 
   return (
-    <main className="bg-gradient-to-br overflow-x-hidden font-Raleway h-[100vh] from-slate-800 to-black text-white flex">
+    <main className="bg-gradient-to-br overflow-y-hidden overflow-x-hidden font-Raleway p-4 2xl:h-[100vh] from-slate-800 to-black text-white flex">
       <div
         className={`text-8xl grid bg-clip-text text-center text-transparent tracking-tighter bg-gradient-to-r max-lg:text-4xl mx-auto mt-5 duration-[2000ms] transition-opacity ${
           isContentVisible ? "opacity-100" : "opacity-0"
@@ -136,7 +135,7 @@ export default function Main() {
           <motion.div
             initial="hidden"
             animate={isContentVisible ? "visible" : "hidden"}
-            className="flex flex-wrap w-[70vw] justify-center max-xl:grid-flow-row max-xl:grid-cols-4 px-2 mx-auto tracking-tight items-center gap-2"
+            className="flex flex-wrap w-auto justify-center max-xl:grid-flow-row max-xl:grid-cols-4 px-2 mx-auto tracking-tight items-center gap-2"
           >
             <SkillCard
               skill="HTML"
@@ -202,6 +201,15 @@ export default function Main() {
               color="text-blue-600"
               index={7}
               bgColor="active:bg-blue-800"
+            />
+            <SkillCard
+              skill="Adobe Premiere"
+              icon={
+                <SiAdobepremierepro className="fill-violet-800" size={iconSize} />
+              }
+              color="text-violet-600"
+              index={7}
+              bgColor="active:bg-violet-500"
             />
           </motion.div>
         </div>
