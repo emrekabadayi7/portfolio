@@ -8,8 +8,14 @@ import {
   DiReact,
   DiMongodb,
   DiGit,
+  DiDatabase,
 } from "react-icons/di";
-import { SiNextdotjs, SiAdobepremierepro, SiTailwindcss, SiAdobephotoshop } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiAdobepremierepro,
+  SiTailwindcss,
+  SiAdobephotoshop,
+} from "react-icons/si";
 
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
@@ -20,6 +26,31 @@ export default function Main() {
   const [IsNameVisible, setIsNameVisible] = useState(false);
   const [iconSize, setIconSize] = useState(null); // Initial size
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+
+  const handleSkillClick = (skill) => {
+    const descriptions = {
+      HTML:
+        "HTML is the standard markup language for creating web pages. It describes the structure of a web page semantically and originally included cues for the appearance of the document.",
+      CSS:
+        "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.",
+      JavaScript:
+        "JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.",
+      ReactJS:
+        "ReactJS is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Facebook and a community of individual developers and companies.",
+      NextJS:
+        "Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
+      TailwindCSS:
+        "TailwindCSS is a utility-first CSS framework for rapidly building custom designs. It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs.",
+      MongoDB:
+        "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.",
+      Git:
+        "Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.",
+      "Adobe Photoshop":
+        "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It has become the industry standard in raster graphics editing, used for graphics design and digital art.",
+      "Adobe Premiere":
+        "Adobe Premiere Pro is a timeline-based video editing software application developed by Adobe Systems. It is geared towards professional video editing, while its sibling, Adobe Premiere Elements, targets the consumer market.",
+    };
+  };
 
   React.useLayoutEffect(() => {
     setIsContentVisible(true);
@@ -78,7 +109,7 @@ export default function Main() {
   };
 
   return (
-    <main className="bg-gradient-to-br overflow-y-hidden overflow-x-hidden font-Raleway p-4 2xl:h-[100vh] from-slate-800 to-black text-white flex">
+    <main className="bg-gradient-to-b overflow-y-hidden overflow-x-hidden font-Raleway p-4 2xl:h-[100vh] from-slate-800 to-black text-white flex">
       <div
         className={`text-8xl grid bg-clip-text text-center text-transparent tracking-tighter bg-gradient-to-r max-lg:text-4xl mx-auto mt-5 duration-[2000ms] transition-opacity ${
           isContentVisible ? "opacity-100" : "opacity-0"
@@ -169,28 +200,36 @@ export default function Main() {
               skill="NextJS"
               icon={<SiNextdotjs size={iconSize} />}
               color="text-[#000000]"
-              index={3}
+              index={4}
               bgColor="active:bg-slate-900"
             />
             <SkillCard
               skill="TailwindCSS"
               icon={<SiTailwindcss size={iconSize} />}
               color="text-[#01B7D6]"
-              index={4}
-              bgColor="active:bg-cyan-300"
+              index={5}
+              bgColor="active:bg-cyan-400"
             />
             <SkillCard
               skill="MongoDB"
               icon={<DiMongodb size={iconSize} />}
               color="text-green-500"
-              index={5}
+              index={6}
               bgColor="active:bg-green-400"
             />
+            <SkillCard
+              skill="SQL"
+              icon={<DiDatabase size={iconSize} />}
+              color="text-blue-600" // Dark blue color for SQL
+              index={7} // Adjust index accordingly
+              bgColor="active:bg-blue-700" // Slightly darker blue for active state
+            />
+
             <SkillCard
               skill="Git"
               icon={<DiGit size={iconSize} />}
               color="text-gray-500"
-              index={6}
+              index={8}
               bgColor="active:bg-gray-600"
             />
             <SkillCard
@@ -199,16 +238,19 @@ export default function Main() {
                 <SiAdobephotoshop className="fill-blue-600" size={iconSize} />
               }
               color="text-blue-600"
-              index={7}
+              index={9}
               bgColor="active:bg-blue-800"
             />
             <SkillCard
               skill="Adobe Premiere"
               icon={
-                <SiAdobepremierepro className="fill-violet-800" size={iconSize} />
+                <SiAdobepremierepro
+                  className="fill-violet-800"
+                  size={iconSize}
+                />
               }
               color="text-violet-600"
-              index={7}
+              index={10}
               bgColor="active:bg-violet-500"
             />
           </motion.div>
